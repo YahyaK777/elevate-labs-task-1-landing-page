@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tidewatch – Know the tide before you leave home</title>
+  <meta name="description" content="Tidewatch shows tide times, swell and wind for your local beach in one glance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Tidewatch home">
+        <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+          <circle cx="14" cy="14" r="14" fill="#0F7C8A"/>
+          <path d="M3 15c3-4 5-4 8 0s5 4 8 0 4-3 6-1" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        Tidewatch
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu"><span></span></label>
+
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#coast">Coastlines</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-small" href="#top">Get the app</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Know the tide before you leave home.</h1>
+          <p>Tidewatch puts tide times, swell height and wind for your beach on one screen, so you can decide in ten seconds whether it’s worth the drive.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#features">Start free</a>
+            <a class="link" href="#coast">See supported coastlines</a>
+          </div>
+        </div>
+
+        <figure class="hero-visual">
+          <svg viewBox="0 0 400 260" role="img" aria-label="Tide chart showing high tide at 6:42 and low tide at 12:55">
+            <rect width="400" height="260" rx="20" fill="#0B2239"/>
+            <path d="M0 150 C50 60 110 60 160 150 S270 240 320 150 S380 70 400 110 V260 H0Z" fill="#0F7C8A" opacity=".55"/>
+            <path d="M0 150 C50 60 110 60 160 150 S270 240 320 150 S380 70 400 110" fill="none" stroke="#CFE8E4" stroke-width="3"/>
+            <circle cx="80" cy="78" r="7" fill="#FF6B57"/>
+            <circle cx="240" cy="205" r="7" fill="#FF6B57"/>
+            <g font-family="DM Sans, sans-serif" font-size="14" fill="#fff">
+              <text x="80" y="55" text-anchor="middle">High 6:42</text>
+              <text x="240" y="236" text-anchor="middle">Low 12:55</text>
+            </g>
+          </svg>
+          <figcaption>Today at Juhu Beach</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Everything you check before a beach day</h2>
+        <div class="feature-grid">
+          <article>
+            <h3>Tide times</h3>
+            <p>High and low tides for the next seven days, down to the minute.</p>
+          </article>
+          <article>
+            <h3>Swell and wind</h3>
+            <p>Wave height, period and wind direction in plain numbers.</p>
+          </article>
+          <article>
+            <h3>Alerts</h3>
+            <p>Get a notification when conditions match what you set.</p>
+          </article>
+          <article>
+            <h3>Works offline</h3>
+            <p>Saved forecasts stay readable when signal drops on the shore.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="coast" class="cta-band">
+      <div class="container cta-inner">
+        <h2>Over 400 beaches, from Goa to Gopalpur.</h2>
+        <a class="btn btn-light" href="#contact">Request your beach</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Tidewatch. Made for people who plan around the sea.</p>
+      <ul class="social" aria-label="Social links">
+        <li><a href="https://twitter.com" aria-label="Twitter">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 2H21l-6.5 7.4L22 22h-6l-4.7-6.2L5.8 22H3l7-8L2 2h6.1l4.3 5.7L18.2 2zm-1 18h1.6L7 3.9H5.3L17.2 20z"/></svg></a></li>
+        <li><a href="https://instagram.com" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a></li>
+        <li><a href="https://github.com" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.5 9.5 0 0 1 5 0c2-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
